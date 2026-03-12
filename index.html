@@ -18,8 +18,121 @@
     <div class="msf--card">
       <div class="msf--sidebar" id="msf--sidebar"></div>
       <div class="msf--panel">
-        <h1>Personal Info</h1>
-        <p>Please pri</p>
+        
+        <form action="#">
+          <!-- Step one Your info -->
+          <h1>Personal Info</h1>
+        <p>Please provide your name, email address, and phone number.</p>
+          <div class="msf--form-step active">
+            <div class="input-group">
+              <label for="username">Name</label>
+                <input type="text" name="username" id="username" placeholder="e.g. Stephen King" />
+            </div>
+            <div class="input-group">
+              <label for="emailaddress">Email Address</label>
+              <input type="email" name="emailaddress" id="email-address" placeholder="e.g. stephenking@lorem.com"/>
+            </div>
+            <div class="input-group">
+              <label for="phonenumber">Phone Number</label>
+              <input type="tel" name="phonenumber" id="phone-number" placeholder=" e.g. +1 234 567 890"/>
+            </div>
+            <!-- Step two member ships plans -->
+          <div class="msf--form-step">
+          <h1>Select your plan</h1>
+          <p>You have the option of monthly or yearly billing</p>
+        <div class="">
+          <div>
+            <img src="#" alt="#">
+            <p>Arcade</p>
+            <p>$9/mo</p>
+            <p>$90/year</p>
+            <p>2 months free</p>
+          </div>
+          <div>
+            <img src="#" alt="#">
+            <p>Advanced</p>
+            <p>$12/mo</p>
+            <p>$120/year</p>
+            <p>2 months free</p>
+          </div>
+          <div>
+            <img src="#" alt="#">
+            <p>Pro</p>
+            <p>$15/mo</p>
+            <p>$150/year</p>
+            <p>2 months free</p>
+          </div>
+          <!-- Member Ship duration toggle -->
+          <div class = "">
+            monthly
+            <div>toggle button</div>
+            Yearly
+          </div>
+        </div>
+        </div>
+<!-- Step 3 Add-ons -->
+ <div class="msf--form-step">
+  <div class="">
+    <h1>Pick add-ons</h1>
+    <p>add-ons help enhance your gaming experience</p>
+  </div>
+  <div class="add-on--group">
+   <div class="add-on--option">
+     <div>
+      <input type="checkbox" id="online-service" name="onlineservice" value="onlineservice" />
+    </div>
+    <div>
+      <p>Online service</p>
+      <p>Access to multiplayer games</p>
+    </div>
+    <div>
+      <p>+$2/mo</p>
+    </div>
+   </div>
+   <div class="add-on--option">
+     <div>
+      <input type="checkbox" id="Larger-storage" name="Largerstorage" value="Largerstorage" />
+    </div>
+    <div>
+      <p>Larger storage</p>
+      <p>Extra 1TB of cloud save</p>
+    </div>
+    <p>+$2/mo</p>
+   </div>
+   <div class="add-on--option">
+     <div>
+      <input type="checkbox" id="Customizable-profile" name="Customizableprofile" value="Customizableprofile" />
+    </div>
+    <div>
+      <p>Customizable profile</p>
+      <p>Custom theme on your profile</p>
+    </div>
+    <p>+$2/mo</p>
+   </div>
+  </div>
+ </div>
+ <!-- step 4 Summary -->
+  <div class="msf--form-step" id="msf--summary">
+
+  </div>
+  <div class="msf--form-step" id="msf-conformation">
+    <img src="#" alt="#">
+<h1>Thnak you!</h1>
+<p>
+  Thanks for confirming your subscription! We hope you have fun
+  using our platform. If you ever need support, please feel free
+  to email us at support@loremgaming.com
+</p>
+  </div>
+        </form>
+  
+        <div class="">
+              <button  class="btn btn-next">Next Step</button>
+              <button  class="btn btn-back">Go Back</button>
+            </div>
+          </div>
+        
+        </div>
       </div>
     </div>
   </body>
