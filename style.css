@@ -1,0 +1,30 @@
+:root {
+
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-grey500: #9699AA;
+    --color-orange300: #FFAF7E;
+    --color-red500: #EE374A;
+    --color-red450: #e96170;
+    --color-red400: #f9818e;
+    --color-purple600: #483EFF;
+    --color-purple500: #483EFF;
+    --color-purple400: #483EFF;
+    --color-purple200: #483EFF;
+    --color-blue950: #022959;
+    --color-blue700: #164A8A;
+    --color-blue300: #ABBCFF;
+    --color-blue200: #BEE2FD;
+    --color-blue100: #EFF5FF;
+    --color-blue50: #F8F9FF;
+
+
+}
+
+/* Simple CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
