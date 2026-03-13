@@ -1,30 +1,109 @@
 :root {
-
-    --color-white: #FFFFFF;
-    --color-black: #000000;
-    --color-grey500: #9699AA;
-    --color-orange300: #FFAF7E;
-    --color-red500: #EE374A;
-    --color-red450: #e96170;
-    --color-red400: #f9818e;
-    --color-purple600: #483EFF;
-    --color-purple500: #483EFF;
-    --color-purple400: #483EFF;
-    --color-purple200: #483EFF;
-    --color-blue950: #022959;
-    --color-blue700: #164A8A;
-    --color-blue300: #ABBCFF;
-    --color-blue200: #BEE2FD;
-    --color-blue100: #EFF5FF;
-    --color-blue50: #F8F9FF;
-
-
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-grey500: #9699aa;
+  --color-orange300: #ffaf7e;
+  --color-red500: #ee374a;
+  --color-red450: #e96170;
+  --color-red400: #f9818e;
+  --color-purple600: #483eff;
+  --color-purple500: #483eff;
+  --color-purple400: #483eff;
+  --color-purple200: #483eff;
+  --color-blue950: #022959;
+  --color-blue700: #164a8a;
+  --color-blue300: #abbcff;
+  --color-blue200: #bee2fd;
+  --color-blue100: #eff5ff;
+  --color-blue50: #f8f9ff;
 }
 
 /* Simple CSS Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  background-color: var(--color-blue100);
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.msf--card {
+  background-color: var(--color-white);
+  display: flex;
+  width: 940px;
+  height: 600px;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 25px 40px -20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  
+}
+
+.msf--sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 306px;
+  height: 600px;
+  padding: 1rem;
+  background-image: url("assets/images/bg-sidebar-desktop.svg");
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: var(--color-purple600);
+  border-radius: 10px;
+}
+.msf--sidebar-item {
+  display: flex;
+
+  gap: 32px;
+  flex-shrink: 0;
+}
+
+.msf--sidebar-item__number {
+  color: var(--color-white);
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.msf--sidebar-item__number-typography {
+  color: var(--color-white);
+  text-align: center;
+  font-family: "Ubuntu";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 1px;
+}
+
+.msf--steps-label {
+  color: var(--color-blue300);
+  font-family: Ubuntu;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.msf--section-label {
+  color: var(--color-white,);
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 1px;
 }
