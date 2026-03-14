@@ -7,9 +7,9 @@
   --color-red450: #e96170;
   --color-red400: #f9818e;
   --color-purple600: #483eff;
-  --color-purple500: #483eff;
-  --color-purple400: #483eff;
-  --color-purple200: #483eff;
+  --color-purple500: #6259ff;
+  --color-purple400: #928cff;
+  --color-purple200: #d6d9e6;
   --color-blue950: #022959;
   --color-blue700: #164a8a;
   --color-blue300: #abbcff;
@@ -43,7 +43,6 @@ body {
   border-radius: 15px;
   box-shadow: 0 25px 40px -20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  
 }
 
 .msf--sidebar {
@@ -51,8 +50,8 @@ body {
   flex-direction: column;
   gap: 2rem;
   width: 306px;
-  height: 600px;
-  padding: 1rem;
+  height: 100%;
+  padding: 2.5rem 2rem;
   background-image: url("assets/images/bg-sidebar-desktop.svg");
   background-size: contain;
   background-position: bottom;
@@ -62,8 +61,8 @@ body {
 }
 .msf--sidebar-item {
   display: flex;
-
-  gap: 32px;
+  gap: 1rem;
+  align-items: center;
   flex-shrink: 0;
 }
 
@@ -74,7 +73,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid white;
+  border: 1px solid var(--color-white);
   border-radius: 50%;
 }
 
@@ -99,7 +98,7 @@ body {
 }
 
 .msf--section-label {
-  color: var(--color-white,);
+  color: var(--color-white);
   font-family: Ubuntu;
   font-size: 14px;
   font-style: normal;
